@@ -9,12 +9,6 @@ def main():
     mlflow.set_experiment("California_Housing_Prediction")
 
     df = fetch_data()
-    X = df[['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude']]
-    y = df['MedHouseVal']
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-    train(X_train, X_test, y_train, y_test)
-
     df = transform_data(df)
     X = df[['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude']]
     y = df['MedHouseVal']

@@ -20,3 +20,5 @@ def train_linear_regression(X_train, X_test, y_train, y_test, run_name="Linear_R
         r2 = r2_score(y_test, y_pred)
 
         mlflow.log_metric("RMSE", rmse)
+        mlflow.log_metric("r2", r2)
+

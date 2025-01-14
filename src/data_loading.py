@@ -7,3 +7,4 @@ def fetch_data():
 def transform_data(df):
     df = df[~((df['AveRooms'] > 100) | (df['AveOccup'] > 100))]
     return df
+
