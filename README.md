@@ -1,6 +1,6 @@
 # Rendu Projet MLOPS
 
-### Indicationd es commandes a executer 
+### Indications des commandes à executer 
 
 1. Installer python 3.11.2
 2. Lancer la commande `pip install -r requirements.txt`
